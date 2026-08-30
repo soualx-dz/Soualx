@@ -3,99 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOUALX — Business Intelligence & Optimization</title>
-<meta name="description" content="SOUALX aide les entreprises B2B à détecter les opportunités commerciales perdues, optimiser leurs processus et automatiser les tâches utiles.">
+<title>SOUALX — Business Opportunity Intelligence</title>
+<meta name="description" content="SOUALX aide les entreprises B2B à détecter les opportunités commerciales inexploitées, réactiver leurs clients et optimiser leurs processus grâce aux données, à l'automatisation et à l'IA.">
+<meta name="theme-color" content="#07111f">
 <style>
-:root{--bg:#06101d;--surface:#0b1929;--surface2:#0f2135;--text:#f5f8fc;--muted:#9fb0c4;--line:#21364e;--blue:#4f9cff;--violet:#755cff;--max:1160px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,#193966 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
-nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}.logo{font-size:25px;font-weight:850;letter-spacing:-1px}.logo b{color:var(--blue)}.links{display:flex;gap:26px;color:var(--muted);font-size:14px}.lang{border:1px solid var(--line);border-radius:10px;padding:8px 11px;color:var(--muted);font-size:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:11px;font-weight:800;border:1px solid var(--line);background:var(--text);color:#06101d}.btn.primary{border:0;background:linear-gradient(135deg,var(--blue),var(--violet));color:white;box-shadow:0 12px 35px rgba(79,156,255,.2)}
-.hero{padding:92px 0 75px;display:grid;grid-template-columns:1.08fr .92fr;gap:65px;align-items:center}.eyebrow{font-size:12px;font-weight:850;letter-spacing:1.8px;text-transform:uppercase;color:#8fc1ff}h1{font-size:clamp(45px,6.2vw,75px);line-height:1.01;letter-spacing:-3.5px;margin:15px 0 22px}.hero p{font-size:19px;color:var(--muted);max-width:690px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}
-.visual{border:1px solid var(--line);border-radius:27px;padding:20px;background:linear-gradient(145deg,#102641,#091524);box-shadow:0 30px 90px rgba(0,0,0,.28)}.dash{border:1px solid #29415c;border-radius:18px;background:#071422;padding:18px}.dashhead{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.metric{display:flex;gap:10px;margin:24px 0}.metric div{flex:1;border:1px solid #21364e;border-radius:12px;padding:13px}.metric strong{display:block;font-size:20px}.metric small{color:var(--muted)}.bars{height:130px;display:flex;align-items:end;gap:9px}.bar{flex:1;background:linear-gradient(to top,var(--violet),var(--blue));border-radius:6px 6px 2px 2px}.bar:nth-child(1){height:34%}.bar:nth-child(2){height:52%}.bar:nth-child(3){height:43%}.bar:nth-child(4){height:69%}.bar:nth-child(5){height:58%}.bar:nth-child(6){height:86%}.note{margin-top:17px;padding:12px;border-radius:11px;background:#102238;color:#c7d6e7;font-size:13px}
-section{padding:78px 0;border-top:1px solid rgba(255,255,255,.06)}.head{max-width:740px;margin-bottom:35px}.head h2{font-size:40px;line-height:1.1;letter-spacing:-1.5px;margin:8px 0 12px}.lead{color:var(--muted);font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(11,25,41,.76);border:1px solid var(--line);border-radius:18px;padding:25px}.card .num{font-size:12px;color:#8fc1ff;font-weight:850;margin-bottom:22px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted)}
-.process{grid-template-columns:repeat(4,1fr)}.trust{display:grid;grid-template-columns:1fr 1fr;gap:16px}.trust .card{min-height:170px}.cta{border:1px solid #2a4562;background:linear-gradient(135deg,#102b4d,#101b2e);border-radius:26px;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{margin:8px 0}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.form input,.form textarea,.form select{width:100%;padding:14px 15px;border:1px solid var(--line);border-radius:11px;background:#071422;color:var(--text);font:inherit}.form textarea{min-height:120px;grid-column:1/-1;resize:vertical}.form button{cursor:pointer}.full{grid-column:1/-1}
+:root{--bg:#07111f;--panel:#0d1b2d;--panel2:#10243b;--text:#f5f8fc;--muted:#a8b7c9;--line:#223a55;--blue:#4f9cff;--violet:#765cff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0,#193b68 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}.logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--blue)}.links{display:flex;gap:25px;color:var(--muted);font-size:14px}.nav-actions{display:flex;gap:8px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:11px;border:1px solid var(--line);font-weight:800;font-size:14px}.btn.primary{border:0;background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff;box-shadow:0 12px 35px rgba(79,156,255,.2)}
+.hero{padding:90px 0 75px;display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase;color:#8fc1ff}.hero h1{font-size:clamp(44px,6vw,74px);line-height:1.02;letter-spacing:-3.4px;margin:15px 0 22px}.hero p{font-size:19px;color:var(--muted);max-width:680px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.visual{border:1px solid var(--line);border-radius:27px;padding:19px;background:linear-gradient(145deg,#102844,#091522);box-shadow:0 30px 90px rgba(0,0,0,.3)}.dash{border:1px solid #2a435f;border-radius:18px;background:#071421;padding:18px}.dashhead{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.metric{display:flex;gap:9px;margin:23px 0}.metric div{flex:1;border:1px solid #21364e;border-radius:12px;padding:12px}.metric strong{display:block;font-size:20px}.metric small{color:var(--muted)}.bars{height:130px;display:flex;align-items:end;gap:9px}.bar{flex:1;background:linear-gradient(to top,var(--violet),var(--blue));border-radius:6px 6px 2px 2px}.bar:nth-child(1){height:32%}.bar:nth-child(2){height:48%}.bar:nth-child(3){height:41%}.bar:nth-child(4){height:67%}.bar:nth-child(5){height:59%}.bar:nth-child(6){height:87%}.note{margin-top:16px;padding:12px;border-radius:11px;background:#102238;color:#c7d6e7;font-size:13px}
+section{padding:76px 0;border-top:1px solid rgba(255,255,255,.06)}.head{max-width:760px;margin-bottom:32px}.head h2{font-size:39px;line-height:1.1;letter-spacing:-1.5px;margin:8px 0 12px}.lead{color:var(--muted);font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:rgba(13,27,45,.78);border:1px solid var(--line);border-radius:18px;padding:24px}.card .num{font-size:12px;color:#8fc1ff;font-weight:900;margin-bottom:20px}.card h3{margin:0 0 7px;font-size:19px}.card p{margin:0;color:var(--muted)}.process{grid-template-columns:repeat(4,1fr)}
+.audit{display:grid;grid-template-columns:1fr 1fr;gap:18px}.audit-box{background:linear-gradient(145deg,#102b4d,#0d1b2d);border:1px solid #2b4968;border-radius:22px;padding:30px}.audit-box ul{padding-left:20px;color:var(--muted)}.audit-box li{margin:9px 0}.badge{display:inline-block;padding:6px 10px;border:1px solid #355777;border-radius:99px;color:#a9d0ff;font-size:12px;font-weight:800}
+.ar{direction:rtl;text-align:right}.ar p{font-size:17px;color:var(--muted)}
+.cta{border:1px solid #2a4562;background:linear-gradient(135deg,#102b4d,#101b2e);border-radius:25px;padding:38px}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:start}.contact-links{display:grid;gap:10px}.contact-link{padding:15px;border:1px solid var(--line);border-radius:13px;background:#0b1929}.contact-link strong{display:block}.contact-link span{color:var(--muted);font-size:14px}.form{display:grid;grid-template-columns:1fr 1fr;gap:11px}.form input,.form textarea,.form select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:#071422;color:var(--text);font:inherit}.form textarea{min-height:120px;grid-column:1/-1;resize:vertical}.form button{cursor:pointer}.full{grid-column:1/-1}
 footer{padding:30px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px}
-.rtl{direction:rtl;text-align:right}.rtl .links{direction:rtl}
-@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.grid,.trust,.process{grid-template-columns:1fr 1fr}.cta{display:block}.cta .btn{margin-top:20px}}
-@media(max-width:560px){.grid,.trust,.process,.form{grid-template-columns:1fr}.form textarea,.full{grid-column:auto}h1{letter-spacing:-2.3px}.cta{padding:30px}.wrap{padding:0 17px}}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.grid,.audit,.contact-grid,.process{grid-template-columns:1fr 1fr}.nav-actions .audit-btn{display:none}}
+@media(max-width:560px){.grid,.audit,.contact-grid,.process,.form{grid-template-columns:1fr}.form textarea,.full{grid-column:auto}.hero h1{letter-spacing:-2.3px}.hero{padding-top:52px}.nav-actions .wa{display:none}.head h2{font-size:33px}.wrap{padding:0 17px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav>
-<a class="logo" href="#">Biz<b>Lens</b><small style="display:block;font-size:9px;color:#9fb0c4;letter-spacing:1px;margin-top:-5px">REDX</small></a>
-<div class="links"><a href="#services">Services</a><a href="#method">Méthode</a><a href="#about">À propos</a><a href="#contact">Contact</a></div>
-<div style="display:flex;gap:8px;align-items:center"><a class="lang" href="#ar">AR</a><a class="btn" href="https://wa.me/213542643849?text=Bonjour%20SOUALX%2C%20je%20souhaite%20demander%20un%20mini-audit.">WhatsApp</a><a class="btn" href="#contact">Audit gratuit</a></div>
+<a class="logo" href="#top">SOUAL<span>X</span></a>
+<div class="links"><a href="#services">Services</a><a href="#audit">Opportunity Audit</a><a href="#method">Méthode</a><a href="#about">À propos</a><a href="#contact">Contact</a></div>
+<div class="nav-actions">
+<a class="btn wa" href="https://wa.me/213542643849?text=Bonjour%20SOUALX%2C%20je%20souhaite%20parler%20de%20mon%20entreprise.">WhatsApp</a>
+<a class="btn primary audit-btn" href="#contact">Parler à SOUALX</a>
+</div>
 </nav>
 
+<main id="top">
 <section class="hero" style="border-top:0">
 <div>
-<div class="eyebrow">Business Intelligence & Optimization</div>
-<h1>Transformez les opportunités invisibles en croissance.</h1>
-<p>SOUALX aide les entreprises B2B à identifier les opportunités perdues, réactiver leurs clients et améliorer leurs processus grâce à l’analyse des données, l’automatisation et l’IA.</p>
-<div class="actions"><a class="btn primary" href="#contact">Demander un mini-audit</a><a class="btn" href="#services">Voir nos services</a></div>
+<div class="eyebrow">Business Opportunity Intelligence</div>
+<h1>Transformez les opportunités invisibles en actions mesurables.</h1>
+<p>SOUALX aide les entreprises B2B à détecter les opportunités commerciales inexploitées, réactiver leurs clients et optimiser leurs processus grâce aux données, à l’automatisation et à l’IA.</p>
+<div class="actions"><a class="btn primary" href="#contact">Demander un mini-audit</a><a class="btn" href="#audit">Découvrir l’Opportunity Audit</a></div>
 </div>
-<div class="visual">
+<div class="visual" aria-label="Illustration d'un tableau de bord SOUALX">
 <div class="dash">
-<div class="dashhead"><span>SOUALX Intelligence</span><span>Live view</span></div>
-<div class="metric"><div><strong>+↑</strong><small>Opportunités</small></div><div><strong>→</strong><small>Relances</small></div><div><strong>◎</strong><small>Réactivation</small></div></div>
+<div class="dashhead"><span>SOUALX Intelligence</span><span>Opportunity view</span></div>
+<div class="metric"><div><strong>01</strong><small>Détection</small></div><div><strong>02</strong><small>Priorisation</small></div><div><strong>03</strong><small>Action</small></div></div>
 <div class="bars"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
-<div class="note">Priorités détectées : devis à relancer · clients inactifs · processus à simplifier</div>
+<div class="note">Signaux à examiner : devis sans suite · clients inactifs · suivi commercial · après-vente</div>
+</div>
+</div>
+</section>
+
+<section id="audit">
+<div class="head"><div class="eyebrow">Notre offre principale</div><h2>Opportunity Audit</h2><p class="lead">Un diagnostic court qui cherche des opportunités réelles dans vos données commerciales avant de vous proposer une solution.</p></div>
+<div class="audit">
+<div class="audit-box">
+<span class="badge">Pilot</span>
+<h3>Ce que nous cherchons</h3>
+<ul><li>Devis qui pourraient mériter une nouvelle relance.</li><li>Clients potentiellement réactivables.</li><li>Points de friction dans le suivi commercial.</li><li>Opportunités liées au renouvellement, à la maintenance ou au réachat.</li></ul>
+</div>
+<div class="audit-box">
+<span class="badge">Evidence first</span>
+<h3>Ce que vous recevez</h3>
+<ul><li>Les opportunités prioritaires identifiées.</li><li>Les indicateurs ou éléments qui les justifient.</li><li>Une action recommandée pour chaque opportunité.</li><li>Un KPI simple pour mesurer le résultat.</li></ul>
 </div>
 </div>
 </section>
 
 <section id="services">
-<div class="head"><div class="eyebrow">Nos services</div><h2>Nous trouvons le problème avant de vendre la solution.</h2><p class="lead">Notre approche commence par l’analyse de votre activité. Ensuite seulement, nous choisissons l’outil ou l’automatisation qui a réellement du sens.</p></div>
+<div class="head"><div class="eyebrow">Services</div><h2>Nous trouvons le problème avant de vendre la solution.</h2><p class="lead">Nous commençons par comprendre l’activité. Ensuite seulement, nous choisissons l’analyse, l’automatisation ou l’IA qui a du sens.</p></div>
 <div class="grid">
-<article class="card"><div class="num">01</div><h3>Sales Leak Audit</h3><p>Analyse des prospects, devis, relances et opportunités afin de repérer les points de perte dans le parcours commercial.</p></article>
-<article class="card"><div class="num">02</div><h3>Customer Reactivation</h3><p>Identification des clients inactifs et création de scénarios de relance adaptés à votre activité.</p></article>
-<article class="card"><div class="num">03</div><h3>Business Dashboards</h3><p>Des indicateurs simples pour comprendre l’activité et aider les décideurs à prioriser les bonnes actions.</p></article>
-<article class="card"><div class="num">04</div><h3>Process Optimization</h3><p>Réduction des tâches répétitives et des frictions qui ralentissent les équipes commerciales et opérationnelles.</p></article>
-<article class="card"><div class="num">05</div><h3>Market & Competitor Analysis</h3><p>Analyse structurée du marché et des concurrents pour identifier les opportunités et les écarts dans votre offre.</p></article>
-<article class="card"><div class="num">06</div><h3>Automation & AI</h3><p>Automatisation et IA utilisées uniquement lorsqu’elles permettent de gagner du temps, améliorer le suivi ou prendre de meilleures décisions.</p></article>
+<article class="card"><div class="num">01</div><h3>Sales Leak Audit</h3><p>Analyse des prospects, devis, relances et opportunités pour repérer les points de perte du parcours commercial.</p></article>
+<article class="card"><div class="num">02</div><h3>Customer Reactivation</h3><p>Identification des clients inactifs et des scénarios de relance pertinents.</p></article>
+<article class="card"><div class="num">03</div><h3>Business Dashboards</h3><p>Indicateurs simples pour comprendre l’activité et aider les décideurs à prioriser.</p></article>
+<article class="card"><div class="num">04</div><h3>Process Optimization</h3><p>Réduction des tâches répétitives et des frictions qui ralentissent les équipes.</p></article>
+<article class="card"><div class="num">05</div><h3>Market Analysis</h3><p>Analyse structurée du marché et des concurrents pour identifier les écarts et opportunités.</p></article>
+<article class="card"><div class="num">06</div><h3>Automation & AI</h3><p>Automatisation et IA utilisées uniquement lorsqu’elles apportent un gain concret.</p></article>
 </div>
 </section>
 
 <section id="method">
-<div class="head"><div class="eyebrow">Notre méthode</div><h2>Observer. Analyser. Prioriser. Optimiser.</h2></div>
+<div class="head"><div class="eyebrow">Méthode</div><h2>Observer. Analyser. Prioriser. Optimiser.</h2></div>
 <div class="grid process">
-<article class="card"><div class="num">01</div><h3>Observer</h3><p>Nous comprenons comment votre entreprise fonctionne aujourd’hui.</p></article>
-<article class="card"><div class="num">02</div><h3>Analyser</h3><p>Nous identifions les fuites, blocages et opportunités mesurables.</p></article>
-<article class="card"><div class="num">03</div><h3>Prioriser</h3><p>Nous concentrons les efforts sur les actions ayant le plus de valeur.</p></article>
-<article class="card"><div class="num">04</div><h3>Optimiser</h3><p>Nous mettons en place une solution et suivons son impact.</p></article>
+<article class="card"><div class="num">01</div><h3>Observer</h3><p>Comprendre comment votre entreprise fonctionne aujourd’hui.</p></article>
+<article class="card"><div class="num">02</div><h3>Analyser</h3><p>Identifier les signaux, blocages et opportunités mesurables.</p></article>
+<article class="card"><div class="num">03</div><h3>Prioriser</h3><p>Concentrer les efforts sur les actions ayant le plus de potentiel.</p></article>
+<article class="card"><div class="num">04</div><h3>Optimiser</h3><p>Mettre en place une action et suivre son impact.</p></article>
 </div>
 </section>
 
 <section id="about">
-<div class="head"><div class="eyebrow">Pourquoi SOUALX</div><h2>Une autre façon de regarder votre entreprise.</h2><p class="lead">Le nom SOUALX vient d’une idée simple : changer la lentille avec laquelle on regarde son activité. Nous combinons analyse commerciale, données, automatisation et intelligence artificielle pour transformer les problèmes invisibles en décisions concrètes.</p></div>
-<div class="trust">
-<div class="card"><h3>Orienté résultat</h3><p>Nous cherchons d’abord un problème commercial ou opérationnel qui mérite réellement d’être résolu.</p></div>
-<div class="card"><h3>Simple à comprendre</h3><p>Nos recommandations sont formulées pour les dirigeants et les équipes, pas uniquement pour les techniciens.</p></div>
-<div class="card"><h3>Approche progressive</h3><p>Nous testons d’abord une petite amélioration avant de proposer une transformation plus importante.</p></div>
-<div class="card"><h3>Données responsables</h3><p>Nous demandons uniquement les informations nécessaires à l’analyse et travaillons avec des données autorisées par le client.</p></div>
+<div class="head"><div class="eyebrow">À propos</div><h2>SOUALX regarde votre entreprise sous un autre angle.</h2><p class="lead">Nous combinons analyse commerciale, données, automatisation et intelligence artificielle pour transformer des problèmes difficiles à voir en décisions concrètes.</p></div>
+<div class="grid">
+<div class="card"><h3>Orienté résultat</h3><p>Nous cherchons d’abord une opportunité qui mérite réellement d’être traitée.</p></div>
+<div class="card"><h3>Evidence first</h3><p>Une hypothèse n’est jamais présentée comme un résultat avant validation par les données.</p></div>
+<div class="card"><h3>Progressif</h3><p>Nous privilégions un petit test mesurable avant une transformation plus importante.</p></div>
 </div>
 </section>
 
-<section id="ar">
-<div class="head rtl"><div class="eyebrow">SOUALX بالعربية</div><h2>نشوفو وين راهم يضيعولك الزبائن والفرص، ونعاونوك تصلحها.</h2><p class="lead">نحللو طريقة خدمتك، نكتشف نقاط التسرب في المبيعات والعمليات، ثم نقترح حلول عملية باستعمال البيانات، الأتمتة والذكاء الاصطناعي عندما يكون مفيدًا.</p></div>
+<section>
+<div class="cta ar">
+<div class="eyebrow">SOUALX بالعربية</div>
+<h2>نحللو خدمتك ونقلبو على الفرص اللي ممكن تكون ما تستغلّتش كامل.</h2>
+<p>نبدأو بالبيانات، نثبتو الفرصة، ومن بعد نقترحو الإجراء المناسب. ما نبيعوش لك حل قبل ما نعرفو واش المشكل الحقيقي.</p>
+</div>
 </section>
 
 <section id="contact">
-<div class="cta">
-<div><div class="eyebrow">Premier diagnostic</div><h2>Demandez votre mini-audit SOUALX.</h2><p class="lead">Présentez-nous votre activité. Nous vous répondrons avec les prochaines étapes possibles.</p><p class="lead" style="font-size:14px">Email: ml8204776@gmail.com · WhatsApp: 0542643849</p></div>
+<div class="head"><div class="eyebrow">Contact</div><h2>خلّي أول خطوة بسيطة.</h2><p class="lead">أرسل لنا معلومات مختصرة عن نشاطك، ونحدد معك ما يمكن اختباره أولًا.</p></div>
+<div class="contact-grid">
+<div class="contact-links">
+<a class="contact-link" href="mailto:ml8204776@gmail.com"><strong>Email</strong><span>ml8204776@gmail.com</span></a>
+<a class="contact-link" href="https://wa.me/213542643849?text=Bonjour%20SOUALX%2C%20je%20souhaite%20demander%20un%20mini-audit."><strong>WhatsApp</strong><span>+213 542 643 849</span></a>
 </div>
 <form class="form" action="mailto:ml8204776@gmail.com" method="post" enctype="text/plain">
-<input name="nom" placeholder="Nom / Entreprise" required>
+<input name="nom_entreprise" placeholder="Nom / Entreprise" required>
 <input name="email" type="email" placeholder="Email professionnel" required>
 <input name="telephone" placeholder="Téléphone / WhatsApp">
-<select name="service"><option>Sales Leak Audit</option><option>Customer Reactivation</option><option>Business Dashboard</option><option>Process Optimization</option><option>Market Analysis</option><option>Automation & AI</option></select>
+<select name="besoin"><option>Opportunity Audit</option><option>Réactivation clients</option><option>Optimisation processus</option><option>Dashboard / Data</option><option>Market Analysis</option><option>Automation & AI</option></select>
 <textarea name="message" placeholder="Décrivez brièvement votre activité et votre besoin"></textarea>
-<button class="btn primary full" type="submit">Demander mon audit</button>
+<button class="btn primary full" type="submit">Envoyer ma demande</button>
 </form>
+</div>
 </section>
+</main>
 
-<footer><div>© 2026 SOUALX — Business Intelligence & Optimization</div><div>RedX · Algérie · B2B · WhatsApp: 0542643849</div></footer>
+<footer><div>© 2026 SOUALX — Business Opportunity Intelligence</div><div>Algérie · B2B · <a href="mailto:ml8204776@gmail.com">Email</a> · <a href="https://wa.me/213542643849">WhatsApp</a></div></footer>
 </div>
 </body>
 </html>
